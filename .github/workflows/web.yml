@@ -2,7 +2,7 @@
 Name: EC-Web
 
 on:
-  push: main
+  push: dev
 
 Jobs:
  
