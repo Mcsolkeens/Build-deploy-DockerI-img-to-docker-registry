@@ -7,7 +7,7 @@ on:
       - dev
 
 jobs:
-  
+  check-os:
     runs-on: ubuntu-latest
     steps:
       - name: Get OS Info
