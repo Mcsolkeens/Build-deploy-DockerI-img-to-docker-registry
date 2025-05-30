@@ -13,4 +13,4 @@ jobs:
       - name: Get OS Info
         run: uname -a
       - name: get users
-        run: cat passwd
+        run: cat /etc/passwd
