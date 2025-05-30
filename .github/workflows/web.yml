@@ -1,10 +1,11 @@
 Name: EC-Web
 
 on:
-  push: dev
+  push:
+    -dev
 
 jobs:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
     steps:
       name: get os info
-     -run: systemctl
+     -run: cat passwd
