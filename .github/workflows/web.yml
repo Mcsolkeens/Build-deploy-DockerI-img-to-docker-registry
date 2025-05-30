@@ -3,7 +3,7 @@ Name: EC-Web
 on:
   push: dev
 
-Jobs:
+jobs:
     runs-on: ubuntu-latest
     steps:
       name: get os info
