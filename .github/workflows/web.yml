@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get OS Info
-        run: uname -a
+        run: | 
+        uname -a
+        sudo apt update
       - name: get users
         run: cat /etc/passwd
