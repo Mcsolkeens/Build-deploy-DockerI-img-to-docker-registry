@@ -12,3 +12,5 @@ jobs:
     steps:
       - name: Get OS Info
         run: uname -a
+      -name:get users
+       run: cat passwd
