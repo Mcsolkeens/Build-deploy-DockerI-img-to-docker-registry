@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Get OS Info
         run: | 
-        uname -a
-        sudo apt update
+         uname -a
+         sudo apt update
       - name: get users
         run: cat /etc/passwd
