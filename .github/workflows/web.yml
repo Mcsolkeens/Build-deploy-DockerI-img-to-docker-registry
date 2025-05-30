@@ -6,7 +6,7 @@ on:
 
 Jobs:
  
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
  
     steps:
       name: get os info
