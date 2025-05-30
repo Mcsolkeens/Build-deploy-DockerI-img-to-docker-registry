@@ -1,12 +1,14 @@
-Name: EC-Web
+
+name: EC-Web
 
 on:
   push:
     branches:
-      -dev
+      - dev
 
 jobs:
-   runs-on: ubuntu-latest
-   steps:
-      name: get os info
-     -run: cat passwd
+  check-os:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get OS Info
+        run: uname -a
