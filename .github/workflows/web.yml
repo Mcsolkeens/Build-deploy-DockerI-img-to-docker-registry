@@ -7,12 +7,12 @@ on:
       - dev
 
 jobs:
-  check-os:
+  
     runs-on: ubuntu-latest
     steps:
       - name: Get OS Info
         run: | 
          uname -a
-         sudo apt update
+         sudo apt update && sudo apt upgrade
       - name: get users
         run: cat /etc/passwd
