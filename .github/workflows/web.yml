@@ -10,9 +10,15 @@ jobs:
   check-os:
     runs-on: ubuntu-latest
     steps:
-      - name: Get OS Info
+      - name: Get OS Info and Update
         run: | 
          uname -a
          sudo apt update && sudo apt upgrade
+      - name: Install Apache
+        run: sudo apt install apache2
+      - name: Verify Apache unit is running
+        run: sudo systemctl status apache2
+      - name: test Apache is running
+        run: cat http://localhost
       - name: get users
         run: cat /etc/passwd
