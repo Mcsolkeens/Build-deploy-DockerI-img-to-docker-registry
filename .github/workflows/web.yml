@@ -1,26 +1,20 @@
 
-name: EC-Web
+name: build and pubish to docker registry 
 
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   check-os:
     runs-on: ubuntu-latest
     steps:
-      - name: Get OS Info and Update
+        - name: Code Checkout
+          uses: actions/checkout@v4.2.2
+      - name: Build Docker Image
         run: | 
-         uname -a
-         sudo apt update && sudo apt upgrade
-      - name: Install Apache
-        run: sudo apt install apache2
-      - name: Start and Verify Apache unit is running
-        run: sudo systemctl start apache2 && sudo systemctl status apache2
-      - name: test Apache is running and get Public IP
-        run: |
-          curl http://localhost
-          curl ident.me
-      - name: get users
-        run: cat /etc/passwd
+          docker build -t app:v1 .
+          docker tag app:v1 mcsolkeens/app_dev
+          docker push mcsolkeens/app_dev
+      
