@@ -1,0 +1,26 @@
+
+name: EC-Web
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  check-os:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get OS Info and Update
+        run: | 
+         uname -a
+         sudo apt update && sudo apt upgrade
+      - name: Install Apache
+        run: sudo apt install apache2
+      - name: Start and Verify Apache unit is running
+        run: sudo systemctl start apache2 && sudo systemctl status apache2
+      - name: test Apache is running and get Public IP
+        run: |
+          curl http://localhost
+          curl ident.me
+      - name: get users
+        run: cat /etc/passwd
