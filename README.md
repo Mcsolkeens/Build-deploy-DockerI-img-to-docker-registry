@@ -27,7 +27,7 @@ This Docker deployment pipeline for a React app automates the following steps:
   
 - Create Docker Hub Account
   
-  Security Considerations Summary
+  **Security Considerations Summary**
 
 Store Docker credentials as GitHub Secrets (USERNAME, PASSWORD)
 
