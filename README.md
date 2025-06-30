@@ -1,4 +1,4 @@
-DOCKER IMAGE BUILD AND DEPLOYMENT USING GITHUB ACTIONS
+**DOCKER IMAGE BUILD AND DEPLOYMENT USING GITHUB ACTIONS**
 
 PROJECT SUMMARY 
 
@@ -22,11 +22,11 @@ This Docker deployment pipeline for a React app automates the following steps:
  PREREQUISITES (Local Setup)
  
 - Install Git
-- 
+  
 - Set up GIT(for first time)
-- 
+  
 - Create Docker Hub Account
-- 
+  
   Security Considerations Summary
 
 Store Docker credentials as GitHub Secrets (USERNAME, PASSWORD)
