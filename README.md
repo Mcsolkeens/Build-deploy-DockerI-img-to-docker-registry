@@ -1,31 +1,29 @@
-# Minimal Norui
+DOCKER IMAGE BUILD AND DEPLOYMENT USING GITHUB ACTIONS
+PROJECT SUMMARY 
+This Docker deployment pipeline for a React app automates the following steps:
+-Takes the developer’s code pushed to the GitHub repository.
+-Uses GitHub Actions to checkout the code on a runner.
+-Dockerizes the React app using a Dockerfile (must be present in the repo).
+-Builds a Docker image from the code.
+-Tags the image appropriately for Docker Hub or another container registry.
+-Authenticates with Docker Hub using secure credentials.
+-Pushes the built container image to the specified Docker registry.
 
-![](public/img/minimal-norui.gif)
+ PREREQUISITES (Local Setup)
+- Install Git
+- Set up GIT(for first time)
+- Create Docker Hub Account
+- 
+🔐 Security Considerations Summary
+✅ Store Docker credentials as GitHub Secrets (USERNAME, PASSWORD)
 
-A minimal norui portfolio example built with NextJS and powered by Notion 🚀.
+✅ Use specific action versions to avoid untrusted updates
 
-## Links
-- [Demo Site](https://minimal-norui.vercel.app/)
-- [Documentation](https://jorenrui.notion.site/Minimal-Norui-168e69403f624b429e7933ce6065b5e7)
-- [Minimal Norui Notion Database](https://jorenrui.notion.site/1b1fe86bf57646ad8a774bb0ce7e39fc?v=8112b088197d4b1882437273ea0c98d0)
+✅ Add branch protection rules to master to prevent unauthorized code from triggering deployments
 
-## Stack
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/) / [ReactJS](https://reactjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Notion API](https://www.notion.so/)
-- Demo site deployed on [Vercel](https://vercel.com/)
 
-## Documentation
 
-You can find the documentation [in this site](https://jorenrui.notion.site/Minimal-Norui-168e69403f624b429e7933ce6065b5e7).
 
-It contains the ff info:
-- Why?
-- How to use
-- [Minimal Norui Notion Database](https://jorenrui.notion.site/1b1fe86bf57646ad8a774bb0ce7e39fc?v=8112b088197d4b1882437273ea0c98d0)
 
-# License
 
-[MIT](https://github.com/jorenrui/norui-minimal/blob/main/LICENSE) © [Joeylene Rivera](https://github.com/jorenrui)
