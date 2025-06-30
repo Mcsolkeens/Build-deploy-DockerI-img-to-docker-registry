@@ -1,6 +1,6 @@
 **DOCKER IMAGE BUILD AND DEPLOYMENT USING GITHUB ACTIONS**
 
-PROJECT SUMMARY 
+**PROJECT SUMMARY** 
 
 This Docker deployment pipeline for a React app automates the following steps:
 
@@ -18,8 +18,8 @@ This Docker deployment pipeline for a React app automates the following steps:
 
 -Pushes the built container image to the specified Docker registry
 
-
- PREREQUISITES (Local Setup)
+**
+** PREREQUISITES (Local Setup)****
  
 - Install Git
   
